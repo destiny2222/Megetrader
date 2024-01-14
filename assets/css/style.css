@@ -672,7 +672,7 @@ body.mege-dark{
 
     .buy_sell .buy_sell_table::before{
         width: 70%;
-        height: 70%;
+        height: 4dvh;
     }
 }
 
