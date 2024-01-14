@@ -341,6 +341,7 @@ body.mege-dark{
 
     .hero-section .shape .lines{
         top: 5%;
+        display: none;
     }
 }
 
@@ -667,6 +668,11 @@ body.mege-dark{
         font-size: 16px;
         line-height: 24px;
         text-align: center;
+    }
+
+    .buy_sell .buy_sell_table::before{
+        width: 70%;
+        height: 70%;
     }
 }
 
