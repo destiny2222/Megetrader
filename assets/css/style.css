@@ -187,7 +187,7 @@ body{
 
 .hamburger{
     position: relative;
-    left:80px;
+    left:0px;
     visibility: hidden;
   }
   
@@ -210,6 +210,27 @@ body{
     border-radius: 2px;
     width: 100%;
     height: 3px;
+  }
+
+  .dark-mode .line-menu{
+    background-color: var(--black);
+  }
+  
+
+  .hamburger-menu.active-nav{
+    top: -13px;
+  }
+
+  .dark-mode .header .navigationbar nav ul li a{
+     color: var(--black);
+  }
+
+  .dark-mode .header .navigationbar .sign_login.mobile-view a{
+    color: var(--black);
+  }
+
+  .dark-mode .header .navigationbar .sign_login a:nth-child(1){
+    color: var(--black);
   }
   
   .line-menu.line-half {
