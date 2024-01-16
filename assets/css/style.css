@@ -91,9 +91,25 @@ body{
 }
 
 .header{
+    position: relative;
+    z-index: 1000;
    padding-top: 20px;
    background-color: var(--black-50);
 }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--black-50); 
+}
+
+.dark-mode .sticky {
+    background-color: var(--black-12);
+}
+
 
 .header .navigationbar{
     display: flex;

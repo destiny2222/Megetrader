@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const switchModeButton = document.querySelector('.switch-mode');
     const sunIcon = document.querySelector('.sun');
     const moonIcon = document.querySelector('.moon');
+    const header = document.querySelector('.header');
     const body = document.body;
 
     switchModeButton.addEventListener('click', function () {
@@ -22,6 +23,15 @@ document.addEventListener('DOMContentLoaded', function () {
         sunIcon.classList.toggle('hidden');
         moonIcon.classList.toggle('hidden');
     });
+
+    window.onscroll = function () {
+        // Add or remove 'sticky' class based on scroll position
+        if (window.pageYOffset > header.offsetTop) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    };
 });
 
 
