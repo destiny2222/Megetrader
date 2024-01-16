@@ -22,7 +22,9 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    /* background-color: var(--black-50); */
+    background-color: var(--black-50);
+    /* padding-bottom: 0;
+    margin-bottom: 0%; */
 }
 
 
@@ -93,8 +95,8 @@ body{
 .header{
     position: relative;
     z-index: 1000;
-   padding-top: 20px;
    background-color: var(--black-50);
+   padding: 20px 0px;
 }
 
 
@@ -625,8 +627,13 @@ body{
     }
 
     .trade .sharp2 {
-        bottom: -4%;
+        bottom: 0%;
         left: 56px;
+    }
+
+    .trade .sharp1{
+        bottom: 3%;
+        left: 40px;
     }
 
     .crypto-investment .invent_shape img {
@@ -874,6 +881,10 @@ body{
 
 /*  */
 
+.about-content{
+    background-color: var(--black-50);
+}
+
 .about-content-title{
     color: var(--white);
     text-align: center;
@@ -883,6 +894,10 @@ body{
     font-weight: 700;
     line-height: 79.992px;
     letter-spacing: -1px;
+}
+
+.dark-mode .about-content-title{
+    color: var(--black);
 }
 
 
@@ -917,6 +932,10 @@ body{
     }
 }
 
+.mission {
+    background-color: var(--bg-white);
+}
+
 .mission h2{
     color: var(--white);
     font-family: 'Inter', sans-serif;
@@ -924,7 +943,10 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 55.02px;
-    
+}
+
+.dark-mode .mission h2{
+    color: var(--black);
 }
 
 .mission p{
@@ -935,7 +957,9 @@ body{
     line-height: 32.004px;
 }
 
-
+.drive{
+    background-color: var(--black-50);
+}
 
 .drives{
     flex-wrap: wrap;
@@ -974,12 +998,24 @@ body{
     text-transform: uppercase;
 }
 
+.dark-mode .drives-box h3{
+    color: var(--black);
+}
+
+.dark-mode .drive h2{
+    color: var(--black);
+}
+
 .drives-box p{
     color: var(--white);
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 32.004px; 
+}
+
+.dark-mode .drives-box p{
+    color: var(--black);
 }
 
 
@@ -996,7 +1032,7 @@ body{
 @media screen and (max-width:600px) {
     .drive h2{
         font-size: 26px;
-        line-height: 0px;
+        line-height: 40px;
     }
     .drives-box{
         flex-direction: column;
@@ -1132,6 +1168,12 @@ body{
     letter-spacing: -1px;
 }
 
+.dark-mode .contact h2 {
+  color: var(--black);
+}
+
+
+
 .contact label{
     color: var(--white);
     font-family: 'Inter', sans-serif;
@@ -1140,6 +1182,10 @@ body{
     line-height: 25.992px;
     letter-spacing: 0.9px;
     text-transform: uppercase;
+}
+
+.dark-mode .contact label{
+    color: var(--black);
 }
 
 .contact .input-style{
@@ -1162,6 +1208,10 @@ body{
 }
 
 
+.dark-mode .contact ::placeholder{
+    color: var(--black);
+}
+
 .contact .message{
     border-radius: 14px;
     border: 1px solid var(--blue);
@@ -1177,6 +1227,10 @@ body{
     text-transform: uppercase;
 }
 
+.dark-mode .contact input[type="submit"]{
+    color: var(--black);
+}
+
 .contact h4{
     color: var(--white);
     font-family: 'Inter', sans-serif;
@@ -1184,6 +1238,10 @@ body{
     font-weight: 700;
     line-height: 30.998px; 
     letter-spacing: 0.22px;
+}
+
+.dark-mode .contact h4{
+    color: var(--black);
 }
 
 
@@ -1194,6 +1252,10 @@ body{
     font-style: normal;
     font-weight: 300;
     line-height: 30px; 
+}
+
+.dark-mode .contact p{
+    color: var(--black);
 }
 
 
@@ -1214,13 +1276,19 @@ body{
     text-decoration: none;
 }
 
+
+
 .contact ul li a{
-    color: var(--white);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 28.998px; 
+}
+
+
+.dark-mode .contact ul li a{ 
+    color: var(--black);
 }
 
 .contact ul li span{
@@ -1240,6 +1308,10 @@ body{
     .contact h2{
         font-size:50px;
     }
+}
+
+.faq{
+    background-color: var(--bg-white);
 }
 
 .faq-heading{
@@ -1276,6 +1348,11 @@ flex-direction: column;
     margin: auto;
 
 }
+
+.dark-mode .faq-page {
+    color: var(--black);
+}
+
 .faq-body{
     margin: auto;
     color: var(--white);
@@ -1287,6 +1364,10 @@ flex-direction: column;
     width: 60%; 
     padding: auto;
    
+}
+
+.dark-mode .faq-body{
+    color: var(--black);
 }
 
 
@@ -1310,6 +1391,9 @@ flex-direction: column;
     content: "\2796";
 }
 
+.dark-mode .faq-page:after {
+    color: var(--black);
+}
 
 @media screen and (max-width: 768px) {
     .faq-page , .faq-body{
@@ -1420,7 +1504,7 @@ footer .wedget.wedgets-box .app-store , .playstore{
     padding:15px  30px;
 }
 
-footer .wedget.wedgets-box .app-store span , .playstore span{
+footer .wedget.wedgets-box  span{
     color: var(--white);
     text-align: center;
     font-family: 'Inter', 'san-serif';
@@ -1432,7 +1516,7 @@ footer .wedget.wedgets-box .app-store span , .playstore span{
     text-transform: uppercase;
 }
 
-.dark-mode footer .wedget.wedgets-box .app-store span , .playstore span{
+.dark-mode footer .wedget.wedgets-box  span{
     color: var(--black);
 }
 
@@ -1462,7 +1546,7 @@ footer .wedget.wedgets-box .app-store span , .playstore span{
     footer .wedget.wedgets-box .app-store, .playstore{
         text-align: center;
     }
-    footer .wedget.wedgets-box .app-store span, .playstore span{
+    footer .wedget.wedgets-box  span{
         font-size: 18px;
         text-align: center;
     }
