@@ -1,21 +1,30 @@
 const navbarToggle = document.querySelector('.hamburger-menu');
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('nav');
-const overlay = document.querySelector('.menu-overlay');
-const Closemenu = document.querySelector('.mobile-menu-close');
 
 navbarToggle.addEventListener('click', function() {
-   menu.classList.add("active-nav");
-   hamburger.classList.add("active-nav");
-   overlay.classList.add("active-nav");
+   menu.classList.toggle("active-nav");
+   hamburger.classList.toggle("active-nav");
 });
 
 
-Closemenu.addEventListener("click", function(){
-    menu.classList.remove("active-nav");
-    hamburger.classList.remove("active-nav");
-   overlay.classList.remove("active-nav");
+// dark theme
+
+document.addEventListener('DOMContentLoaded', function () {
+    const switchModeButton = document.querySelector('.switch-mode');
+    const sunIcon = document.querySelector('.sun');
+    const moonIcon = document.querySelector('.moon');
+    const body = document.body;
+
+    switchModeButton.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+        // Toggle visibility of sun and moon icons
+        sunIcon.classList.toggle('hidden');
+        moonIcon.classList.toggle('hidden');
+    });
 });
+
+
   
    
    /* ==================================================
